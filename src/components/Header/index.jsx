@@ -25,10 +25,10 @@ const Header = () => {
     return(
         <StyledHeader>
             <NavLinks>
-                <NavBtn><NavBtnStyle>Home</NavBtnStyle></NavBtn>
-                <NavBtn><NavBtnStyle>About</NavBtnStyle></NavBtn>
-                <NavBtn><NavBtnStyle>Projects</NavBtnStyle></NavBtn>
-                <NavBtn><NavBtnStyle>Contact</NavBtnStyle></NavBtn>
+                <NavBtn><NavBtnStyle href="#">Home</NavBtnStyle></NavBtn>
+                <NavBtn><NavBtnStyle href="#">About</NavBtnStyle></NavBtn>
+                <NavBtn><NavBtnStyle href="#">Projects</NavBtnStyle></NavBtn>
+                <NavBtn><NavBtnStyle href="#">Contact</NavBtnStyle></NavBtn>
             </NavLinks>
         </StyledHeader>
     )
