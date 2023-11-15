@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
+import {Link} from 'react-scroll';
 import {shadowColor, lightblueColor} from "../UI/variables";
 
 const StyledHeader = styled.nav`
@@ -25,18 +26,20 @@ const NavBtnStyle = styled.a`
     cursor: pointer;
 `;
 
-const Header = () => {
-    return(
-        <StyledHeader>
-            <NavLinks>
-                <NavBtn><NavBtnStyle href="#">Home</NavBtnStyle></NavBtn>
-                <NavBtn><NavBtnStyle href="#">About</NavBtnStyle></NavBtn>
-                <NavBtn><NavBtnStyle href="#">Projects</NavBtnStyle></NavBtn>
-                <NavBtn><NavBtnStyle href="#">Contact</NavBtnStyle></NavBtn>
-            </NavLinks>
-        </StyledHeader>
-    )
-}
 
 
-export default Header;
+export default class Header extends Component {
+    render(){
+        return(
+            <StyledHeader>
+                <NavLinks>
+                    <NavBtn><Link to="homePage" spy={true} smooth={true}><NavBtnStyle href="#">Home</NavBtnStyle></Link></NavBtn>
+                    <NavBtn><Link to="aboutPage" spy={true} smooth={true}><NavBtnStyle href="#">About</NavBtnStyle></Link></NavBtn>
+                    <NavBtn><NavBtnStyle href="#">Projects</NavBtnStyle></NavBtn>
+                    <NavBtn><NavBtnStyle href="#">Contact</NavBtnStyle></NavBtn>
+                </NavLinks>
+            </StyledHeader>
+        )
+    }
+};
+

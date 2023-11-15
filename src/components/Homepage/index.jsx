@@ -2,16 +2,16 @@ import React from "react";
 import styled from "styled-components";
 import { lightblueColor, aquaColor, pinkColor } from "../UI/variables";
 
-const Container = styled.section`
+
+const MainContainer = styled.section`
+    padding: 0.938rem 0 0 9.375rem;
+`;
+const Container = styled.div`
     color: ${lightblueColor};
     text-align: left;
-    padding: 100px;
-    margin: 230px 0px 0px 0px;
-    width: fit-content;
+    padding: 0.938rem;
+    margin: 6em 0rem 0rem 3.5rem;
     height: 75vh;
-    position: relative;
-    top: 50%;
-    left: 10%;
     font-size: xxx-large;
 `;
 const TextColor = styled.span`
@@ -31,11 +31,13 @@ const ResumeBtn =  styled.a`
 
 const Homepage = () =>{
     return(
-        <Container>
-            <h1>Hi! I'm<TextColor> Erick Salmeron</TextColor></h1>
-            <h2>a Web Developer</h2>
-            <ResumeBtn href="#">Download CV</ResumeBtn>
-        </Container>
+        <MainContainer id="homePage">
+            <Container >
+                <h1>Hi! I'm<TextColor> Erick Salmeron</TextColor></h1>
+                <h2>a Web Developer</h2>
+                <ResumeBtn href="#">Download CV</ResumeBtn>
+            </Container>
+        </MainContainer>
     )
 }
 

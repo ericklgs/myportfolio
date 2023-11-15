@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import { lightblueColor, aquaColor } from "../UI/variables";
-import css3icon from "../../assets/images/html5.png"
-import html5icon from "../../assets/images/css3.png"
-import javascripticon from "../../assets/images/javascript.png"
-import reacticon from "../../assets/images/react.png"
+import css3icon from "../../assets/images/html5.png";
+import html5icon from "../../assets/images/css3.png";
+import javascripticon from "../../assets/images/javascript.png";
+import reacticon from "../../assets/images/react.png";
 
 const ContainerAbout = styled.section`
     margin: 80px 120px 0 120px;
@@ -37,7 +37,7 @@ const ImgAbout = styled.img`
 
 const AboutPage = () => {
     return(
-        <ContainerAbout>
+        <ContainerAbout id="aboutPage">
             <HeadAbout><h2>Hi there<SpAbout>!</SpAbout></h2></HeadAbout>
             <TextAbout><p>I’m Erick Leonardo Gallardo Salmerón a graduate with a bachelor's degree in <SpAbout>
                     Software Development </SpAbout>focused in Front-End, I consider myself a

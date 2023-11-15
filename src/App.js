@@ -1,18 +1,22 @@
+import React, {Component} from 'react';
 import './App.css';
 import Header from './components/Header';
 import Homepage from './components/Homepage';
 import AboutPage from './components/About';
+import ContactPage from './components/Contact';
 
 
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-        <Homepage />
-        <AboutPage />
-    </div>
-  );
+
+export default class App extends Component{
+  render() {
+    return (
+      <div className="App">
+        <Header />
+          <Homepage />
+          <AboutPage />
+          <ContactPage />
+      </div>
+    );
+  }
 }
-
-export default App;
