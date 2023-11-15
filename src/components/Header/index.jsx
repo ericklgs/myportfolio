@@ -7,19 +7,23 @@ const StyledHeader = styled.nav`
     color: ${lightblueColor};
     font-size: small;
     box-shadow: 1px 1px 8px ${shadowColor};
-`
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+`;
 const NavLinks = styled.ul`
     text-align: center;
-`
+`;
 const NavBtn = styled.li`
     display: inline-block;
     padding: 15px 30px;
-`
+`;
 const NavBtnStyle = styled.a`
     color: inherit;
     text-decoration: none;
     cursor: pointer;
-`
+`;
 
 const Header = () => {
     return(
@@ -35,4 +39,4 @@ const Header = () => {
 }
 
 
-export default Header
+export default Header;
