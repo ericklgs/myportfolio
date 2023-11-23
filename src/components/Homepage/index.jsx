@@ -20,7 +20,7 @@ const TextColor = styled.span`
 const ResumeBtn =  styled.a`
     cursor: pointer;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 500;
     text-decoration: none;
     color: ${lightblueColor};
     border-radius: 6px;

@@ -7,8 +7,8 @@ import javascripticon from "../../assets/images/javascript.png";
 import reacticon from "../../assets/images/react.png";
 
 const ContainerAbout = styled.section`
-    margin: 80px 120px 0 120px;
-    padding: 100px 100px 0 100px;
+    margin: 0.313rem 7.5rem 12.5rem 7.5rem;
+    padding: 15.5rem 6.25rem 6.25rem 6.25rem;
     height: 85vh;
 `;
 const HeadAbout = styled.div`
@@ -19,35 +19,35 @@ const SpAbout = styled.span`
     color: ${aquaColor};
     align-content: flex-start;
 `;
-const TextAbout = styled.div`
+const MainParagraph = styled.div`
     color: ${lightblueColor};
     font-size: x-large;
 `;
-const TextAbout2 = styled.p`
-    margin-top: 40px;
+const SecondaryParagraph = styled.p`
+    margin-top: 5.5rem;
     text-align: center;
 `;
 const IconAbout = styled.div`
     text-align: center;
-    margin-top: 40px;
+    margin-top: 3.5rem;
 `;
 const ImgAbout = styled.img`
-    margin: 10px;
+    margin: 0.625rem;
 `;
 
 const AboutPage = () => {
     return(
         <ContainerAbout id="aboutPage">
             <HeadAbout><h2>Hi there<SpAbout>!</SpAbout></h2></HeadAbout>
-            <TextAbout><p>I’m Erick Leonardo Gallardo Salmerón a graduate with a bachelor's degree in <SpAbout>
+            <MainParagraph><p>I’m Erick Leonardo Gallardo Salmerón a graduate with a bachelor's degree in <SpAbout>
                     Software Development </SpAbout>focused in Front-End, I consider myself a
                     person capable of <SpAbout>easily a adapt</SpAbout> to any type of environment, always calm under any stress situation or
                     any kind of problem, <SpAbout>constantly expanding my knowledge</SpAbout> with new technologies and tools to create 
                     beautiful, responsive and functional web sites<SpAbout>.</SpAbout></p>
-            </TextAbout>
-            <TextAbout>
-                <TextAbout2>these are the technologies that I use</TextAbout2>
-            </TextAbout>
+            </MainParagraph>
+            <MainParagraph>
+                <SecondaryParagraph>these are the technologies that I use</SecondaryParagraph>
+            </MainParagraph>
             <IconAbout>
                 <ImgAbout src={html5icon} alt="HTML5"/>
                 <ImgAbout src={css3icon} alt="CSS5"/>
