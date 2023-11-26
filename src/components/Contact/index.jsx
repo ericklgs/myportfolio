@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import {lightblueColor, aquaColor} from "../UI/variables"
+import {lightblueColor, aquaColor, pinkColor, blueColor} from "../UI/variables";
 import linkedinicon from "../../assets/images/inicon.png";
 import githubicon from "../../assets/images/githubicon.png";
 
@@ -43,9 +43,29 @@ const FormInfo = styled.div`
     width: 40%;
     text-align: center;
 `
-const FormLayout = styled.div`
-
+const FormLayout = styled.form`
+    font-size: 2rem;
 `
+
+const ButtonContainer = styled.div`
+    
+`
+const FormButton = styled.a`
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: ${lightblueColor};
+    border-radius: 0.375rem;
+    background-color: ${pinkColor};
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    box-shadow: 0.313rem 0.313rem 0.25rem #000000;
+    &:hover {
+        background-color: ${blueColor};
+        transition: 0.5s;
+    }
+`
+
 
 const ContactPage = () => {
     return(
@@ -60,12 +80,11 @@ const ContactPage = () => {
                 <AnchorIcon href="https://github.com/ericklgs" target="_blank" rel="noopener noreferrer"><ContactIcon src={githubicon}/></AnchorIcon>
             </PersonalInfo>
             <FormInfo>
-                <PersonalTextTitle>E-mail</PersonalTextTitle>
-                <PersonalText>el.gs9595@gmail.com</PersonalText>
-                <PersonalText>el.gs9595@outlook.com</PersonalText>
-                <PersonalTextTitle>Socials</PersonalTextTitle>
-                <a href="https://www.linkedin.com/in/erickleogs/" target="_blank" rel="noopener noreferrer"><ContactIcon src={linkedinicon}/></a>
-                <a href="https://github.com/ericklgs" target="_blank" rel="noopener noreferrer"><ContactIcon src={githubicon}/></a>
+                <FormLayout>
+                    <ButtonContainer>
+                        <FormButton>Send</FormButton>
+                    </ButtonContainer>
+                </FormLayout>
             </FormInfo>
         </ContainerContact>
         </TitleContact>

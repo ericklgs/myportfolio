@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { lightblueColor, aquaColor, pinkColor } from "../UI/variables";
+import { lightblueColor, aquaColor, pinkColor, blueColor } from "../UI/variables";
 
 
 const MainContainer = styled.section`
@@ -19,14 +19,18 @@ const TextColor = styled.span`
 `;
 const ResumeBtn =  styled.a`
     cursor: pointer;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     text-decoration: none;
     color: ${lightblueColor};
-    border-radius: 6px;
+    border-radius: 0.375rem;
     background-color: ${pinkColor};
-    padding: 8px 10px 8px 10px;
-    box-shadow: 5px 5px 4px #000000;
+    padding: 0.5rem 0.625rem 0.5rem 0.625rem;
+    box-shadow: 0.313rem 0.313rem 0.25rem #000000;
+    &:hover {
+        background-color: ${blueColor};
+        transition: 0.5s;
+    }
 `;
 
 const Homepage = () =>{
