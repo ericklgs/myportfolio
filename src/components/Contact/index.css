@@ -1,0 +1,48 @@
+.campo2{
+    margin: 65px 0px 0px 0px;
+}
+.campo{
+    margin: 15px 0;
+}
+
+.campo2 label {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.campo label{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.campo2 input{
+    width: 50%;
+    background-color: #FFFFFF;
+    border:none;
+    padding: 12px 10px;
+    outline-color: #6278F7;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.campo input{
+    width: 50%;
+    background-color: #FFFFFF;
+    border:none;
+    padding: 12px 10px;
+    outline-color: #6278F7;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.campo textarea{
+    width: 50%;
+    background-color: #FFFFFF;
+    border:none;
+    padding: 12px 10px;
+    outline-color: #6278F7;
+    font-size: 16px;
+    box-sizing: border-box;
+}
