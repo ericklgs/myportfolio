@@ -10,6 +10,7 @@ const ContainerAbout = styled.section`
     margin: 0.313rem 7.5rem 12.5rem 7.5rem;
     padding: 15.5rem 6.25rem 6.25rem 6.25rem;
     height: 85vh;
+    position: relative;
 `;
 const HeadAbout = styled.div`
     color: ${lightblueColor};
@@ -33,6 +34,10 @@ const IconAbout = styled.div`
 `;
 const ImgAbout = styled.img`
     margin: 0.625rem;
+    &:hover {
+        scale: 1.1;
+        transition: 0.5s;
+    }
 `;
 
 const AboutPage = () => {
@@ -46,7 +51,7 @@ const AboutPage = () => {
                     beautiful, responsive and functional web sites<SpAbout>.</SpAbout></p>
             </MainParagraph>
             <MainParagraph>
-                <SecondaryParagraph>these are the technologies that I use</SecondaryParagraph>
+                <SecondaryParagraph>the technologies that I use</SecondaryParagraph>
             </MainParagraph>
             <IconAbout>
                 <ImgAbout src={html5icon} alt="HTML5"/>

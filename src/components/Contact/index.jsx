@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser"
 import "./index.css"
-import {lightblueColor, aquaColor, pinkColor, blueColor} from "../UI/variables";
+import {lightblueColor, aquaColor, pinkColor, lightPinkColor} from "../UI/variables";
 import linkedinicon from "../../assets/images/inicon.png";
 import githubicon from "../../assets/images/githubicon.png";
 
@@ -11,6 +11,8 @@ const TitleContact = styled.section`
     color: ${lightblueColor};
     text-align: center;
     font-size: 3rem;
+    padding-top: 10rem;
+    position: relative;
 `
 const ContainerContact = styled.div`
     display: flex;
@@ -35,10 +37,15 @@ const PersonalText = styled.p`
     font-size: 1.2rem;
 `
 const AnchorIcon = styled.a`
-    margin: 0.7rem;
+    margin: 2rem;
+    
 `
 const ContactIcon = styled.img`
-    margin: 1rem;
+    margin: 0rem;
+    &:hover {
+        scale: 1.1;
+        transition: 0.5s;
+    }
 `
 const FormInfo = styled.div`
     margin: 1rem;
@@ -63,7 +70,7 @@ const FormButton = styled.button`
     padding: 0.5rem 1rem 0.5rem 1rem;
     box-shadow: 0.313rem 0.313rem 0.25rem #000000;
     &:hover {
-        background-color: ${blueColor};
+        background-color: ${lightPinkColor};
         transition: 0.5s;
     }
 `

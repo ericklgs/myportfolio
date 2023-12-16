@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { lightblueColor, aquaColor, pinkColor, blueColor } from "../UI/variables";
+import { lightblueColor, aquaColor, pinkColor, lightPinkColor } from "../UI/variables";
 
 
 const MainContainer = styled.section`
@@ -28,7 +28,7 @@ const ResumeBtn =  styled.a`
     padding: 0.5rem 0.625rem 0.5rem 0.625rem;
     box-shadow: 0.313rem 0.313rem 0.25rem #000000;
     &:hover {
-        background-color: ${blueColor};
+        background-color: ${lightPinkColor};
         transition: 0.5s;
     }
 `;
@@ -37,7 +37,7 @@ const Homepage = () =>{
     return(
         <MainContainer id="homePage">
             <Container >
-                <h1>Hi! I'm<TextColor> Erick Salmeron</TextColor></h1>
+                <h1>Hi<TextColor>!</TextColor> I'm<TextColor> Erick Salmeron</TextColor></h1>
                 <h2>a Web Developer</h2>
                 <ResumeBtn href="#">Download CV</ResumeBtn>
             </Container>

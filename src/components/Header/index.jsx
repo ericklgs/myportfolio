@@ -35,7 +35,7 @@ export default class Header extends Component {
                 <NavLinks>
                     <NavBtn><Link to="homePage" spy={true} smooth={true}><NavBtnStyle href="#">Home</NavBtnStyle></Link></NavBtn>
                     <NavBtn><Link to="aboutPage" spy={true} smooth={true}><NavBtnStyle href="#">About</NavBtnStyle></Link></NavBtn>
-                    <NavBtn><NavBtnStyle href="#">Projects</NavBtnStyle></NavBtn>
+                    <NavBtn><Link to="ProjectsPage" spy={true} smooth={true}><NavBtnStyle href="#">Projects</NavBtnStyle></Link></NavBtn>
                     <NavBtn><Link to="contactPage" spy={true} smooth={true}><NavBtnStyle href="#">Contact</NavBtnStyle></Link></NavBtn>
                 </NavLinks>
             </StyledHeader>

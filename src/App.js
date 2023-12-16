@@ -3,7 +3,9 @@ import './App.css';
 import Header from './components/Header';
 import Homepage from './components/Homepage';
 import AboutPage from './components/About';
+import ProjectsPage from './components/Projects';
 import ContactPage from './components/Contact';
+
 
 
 
@@ -15,6 +17,7 @@ export default class App extends Component{
         <Header />
           <Homepage />
           <AboutPage />
+          <ProjectsPage />
           <ContactPage />
       </div>
     );
