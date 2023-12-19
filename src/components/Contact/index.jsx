@@ -13,52 +13,52 @@ const TitleContact = styled.section`
     font-size: 3rem;
     padding-top: 10rem;
     position: relative;
-`
+`;
 const ContainerContact = styled.div`
     display: flex;
     justify-content: space-evenly;
     height: 75vh;
-`
+`;
 const PersonalInfo = styled.div`
     text-align: center;
     margin: 1rem;
     width: 40%;
-`
+`;
 const PersonalTextTitle = styled.h3`
     color: ${aquaColor};
     font-weight: 500;
     font-size: 2rem;
     margin: 4.5rem 0 2rem 0;
-`
+`;
 const PersonalText = styled.p`
     color: ${lightblueColor};
     margin: 1rem;
     font-weight: 500;
     font-size: 1.2rem;
-`
+`;
 const AnchorIcon = styled.a`
     margin: 2rem;
     
-`
+`;
 const ContactIcon = styled.img`
     margin: 0rem;
     &:hover {
         scale: 1.1;
         transition: 0.5s;
     }
-`
+`;
 const FormInfo = styled.div`
     margin: 1rem;
     width: 40%;
     text-align: center;
-`
+`;
 const FormLayout = styled.form`
     font-size: 2rem;
-`
+`;
 
 const ButtonContainer = styled.div`
     
-`
+`;
 const FormButton = styled.button`
     cursor: pointer;
     font-size: 1rem;
@@ -73,7 +73,7 @@ const FormButton = styled.button`
         background-color: ${lightPinkColor};
         transition: 0.5s;
     }
-`
+`;
 
 
 const ContactPage = () => {
@@ -142,6 +142,6 @@ const ContactPage = () => {
         </ContainerContact>
         </TitleContact>
     )
-}
+};
 
 export default ContactPage;

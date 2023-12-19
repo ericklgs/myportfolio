@@ -43,6 +43,6 @@ const Homepage = () =>{
             </Container>
         </MainContainer>
     )
-}
+};
 
 export default Homepage;
