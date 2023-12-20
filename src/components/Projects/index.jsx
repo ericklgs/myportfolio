@@ -148,7 +148,7 @@ const ProjectsPage = () => {
                                     <GridSecondaryTitle>Personal portfolio with my information </GridSecondaryTitle>
                                 </GridTitles>
                                 <GridButtons>
-                                    <ButtonOne href="https://org-ericklgs.vercel.app" target="_blank" rel="noopener noreferrer">Visit</ButtonOne>
+                                    <ButtonOne href="https://myportfolio-ericklgs.vercel.app" target="_blank" rel="noopener noreferrer">Visit</ButtonOne>
                                     <ButtonTwo href="https://github.com/ericklgs/myportfolio" target="_blank" rel="noopener noreferrer">Code</ButtonTwo>
                                 </GridButtons>
                             </SecondGridContent>
