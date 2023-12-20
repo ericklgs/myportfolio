@@ -1,28 +1,51 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
 import emailjs from "@emailjs/browser"
-import "./index.css"
 import {lightblueColor, aquaColor, pinkColor, lightPinkColor} from "../UI/variables";
 import linkedinicon from "../../assets/images/inicon.png";
 import githubicon from "../../assets/images/githubicon.png";
 
 
-const TitleContact = styled.section`
+const MainContainer = styled.section`
     color: ${lightblueColor};
+    position: flex;
+    @media only screen and (max-width: 1120px) and (min-width: 590px) {
+        margin-top: 65rem;
+    };
+    @media only screen and (max-width: 589px) {
+        margin-top: 80rem;
+    };
+`;
+const MainTitle = styled.h2`
     text-align: center;
-    font-size: 3rem;
+    font-size: 4.5rem;
     padding-top: 10rem;
-    position: relative;
+    @media only screen and (max-width: 589px) {
+        font-size: 3rem;
+    };
 `;
 const ContainerContact = styled.div`
     display: flex;
     justify-content: space-evenly;
     height: 75vh;
+    @media only screen and (max-width: 1120px) and (min-width: 590px) {
+        display: unset;
+    };
+    @media only screen and (max-width: 589px) {
+        display: unset;
+    };
 `;
 const PersonalInfo = styled.div`
     text-align: center;
     margin: 1rem;
     width: 40%;
+    @media only screen and (max-width: 1120px) and (min-width: 590px) {
+        width: 100%;
+    };
+    @media only screen and (max-width: 589px) {
+        width: 80%;
+        margin-left: 10%;
+    };
 `;
 const PersonalTextTitle = styled.h3`
     color: ${aquaColor};
@@ -31,7 +54,6 @@ const PersonalTextTitle = styled.h3`
     margin: 4.5rem 0 2rem 0;
 `;
 const PersonalText = styled.p`
-    color: ${lightblueColor};
     margin: 1rem;
     font-weight: 500;
     font-size: 1.2rem;
@@ -51,13 +73,62 @@ const FormInfo = styled.div`
     margin: 1rem;
     width: 40%;
     text-align: center;
+    @media only screen and (max-width: 1120px) and (min-width: 590px) {
+        width: 100%;
+    };
+    @media only screen and (max-width: 589px) {
+        width: 80%;
+        margin-left: 10%;
+    };
 `;
-const FormLayout = styled.form`
+const FormContainer = styled.form`
     font-size: 2rem;
 `;
 
-const ButtonContainer = styled.div`
+const FormLayout = styled.div`
+`;
+const FirstField = styled.div`
+    padding-top: 2.8rem;
+    margin: 0.938rem;
     
+`;
+const SecondaryField = styled.div`
+    margin: 0.938rem;
+`;
+const FirstLabel = styled.label`
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+`;
+const FieldInput = styled.input`
+    width: 50%;
+    background-color: #fff;
+    border: none;
+    padding: 0.75rem 0.625rem;
+    outline-color: ${pinkColor};
+    font-size: 1rem;
+    box-sizing: border-box;
+    @media only screen and (max-width: 1120px) and (min-width: 590px) {
+        width: 40%;
+    };
+    @media only screen and (max-width: 589px) {
+        width: 90%;
+    };
+`;
+const FielTextarea = styled.textarea`
+    width: 50%;
+    background-color: #fff;
+    border: none;
+    padding: 0.75rem 0.625rem;
+    outline-color: ${pinkColor};
+    font-size: 1rem;
+    box-sizing: border-box;
+    @media only screen and (max-width: 1120px) and (min-width: 590px) {
+        width: 40%;
+    };
+    @media only screen and (max-width: 589px) {
+        width: 90%;
+    };
 `;
 const FormButton = styled.button`
     cursor: pointer;
@@ -98,7 +169,8 @@ const ContactPage = () => {
     };
 
     return(
-        <TitleContact id="contactPage"><h2>Contact me</h2>
+        <MainContainer id="contactPage">
+        <MainTitle>Contact me</MainTitle>
         <ContainerContact>
             <PersonalInfo>
                 <PersonalTextTitle>E-mail</PersonalTextTitle>
@@ -109,38 +181,38 @@ const ContactPage = () => {
                 <AnchorIcon href="https://github.com/ericklgs" target="_blank" rel="noopener noreferrer"><ContactIcon src={githubicon}/></AnchorIcon>
             </PersonalInfo>
             <FormInfo>
-                <FormLayout ref={form} onSubmit={sendEmail}>
-                    <ButtonContainer>
-                        <div className="campo2">
-                            <label>Name</label><br/>
-                            <input 
+                <FormContainer ref={form} onSubmit={sendEmail}>
+                    <FormLayout>
+                        <FirstField>
+                            <FirstLabel>Name</FirstLabel><br/>
+                            <FieldInput 
                             type="text" 
                             placeholder="Name" 
                             name="user_name" 
                             required />
-                        </div>
-                        <div className="campo">
-                            <label>E-mail</label><br/>
-                            <input 
+                        </FirstField>
+                        <SecondaryField>
+                            <FirstLabel>E-mail</FirstLabel><br/>
+                            <FieldInput 
                             type="email" 
                             placeholder="E-mail" 
                             name="user_email"
                             required />
-                        </div>
-                        <div className="campo">
-                            <label>Message</label><br/>
-                            <textarea 
+                        </SecondaryField>
+                        <SecondaryField>
+                            <FirstLabel>Message</FirstLabel><br/>
+                            <FielTextarea 
                             rows="4" 
                             placeholder="Message" 
                             name="message" 
                             required />
-                        </div>
+                        </SecondaryField>
                         <FormButton type="submit" value="Send">Send</FormButton>
-                    </ButtonContainer>
-                </FormLayout>
+                    </FormLayout>
+                </FormContainer>
             </FormInfo>
         </ContainerContact>
-        </TitleContact>
+        </MainContainer>
     )
 };
 

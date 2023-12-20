@@ -10,7 +10,19 @@ const ContainerAbout = styled.section`
     margin: 0.313rem 7.5rem 12.5rem 7.5rem;
     padding: 15.5rem 6.25rem 6.25rem 6.25rem;
     height: 85vh;
-    position: relative;
+    position: flex;
+    @media only screen and (max-width: 1120px) and (min-width: 590px) {
+        margin: 0.313rem 1.5rem 12.5rem 1.5rem;
+        padding: 8.5rem 6.25rem 6.25rem 6.25rem;
+        text-wrap: balance;
+        position: relative;
+    };
+    @media only screen and (max-width: 589px){
+        margin: 0.313rem 0.3rem 12.5rem 0.3rem;
+        padding: 8.5rem 2rem 6.25rem 2rem;
+        position: relative;    
+        width: 100%;
+    };
 `;
 const HeadAbout = styled.div`
     color: ${lightblueColor};
@@ -59,7 +71,7 @@ const AboutPage = () => {
                     beautiful, responsive and functional web sites<SpAbout>.</SpAbout></p>
             </MainParagraph>
             <MainParagraph>
-                <SecondaryParagraph>the technologies that I use</SecondaryParagraph>
+                <SecondaryParagraph>Technologies that I use</SecondaryParagraph>
             </MainParagraph>
             <IconAbout>
                 <ImgContainer>

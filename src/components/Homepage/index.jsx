@@ -5,6 +5,12 @@ import { lightblueColor, aquaColor, pinkColor, lightPinkColor } from "../UI/vari
 
 const MainContainer = styled.section`
     padding: 0.938rem 0 0 9.375rem;
+    @media only screen and (max-width: 1120px) and (min-width: 590px) {
+        padding: 0.938rem 0 0 5rem;  
+    };
+    @media only screen and (max-width: 589px) {
+        padding: 0.938rem 0 0 1rem;
+    };
 `;
 const Container = styled.div`
     color: ${lightblueColor};
@@ -13,6 +19,10 @@ const Container = styled.div`
     margin: 6em 0rem 0rem 3.5rem;
     height: 75vh;
     font-size: xxx-large;
+    @media only screen and (max-width: 589px) {
+        margin: 6em 0 0 0;
+        font-size: 2.5rem;
+    };
 `;
 const TextColor = styled.span`
     color: ${aquaColor};

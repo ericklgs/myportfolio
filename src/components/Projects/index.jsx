@@ -9,7 +9,7 @@ import BankImg from "../../assets/images/Projects/Bank.webp";
 const ProjectsMainSection = styled.section`
     margin-bottom: 15%;
     padding-top: 4rem;
-    position: relative;
+    position: flex;
     height: 90vh;
 `;
 const MainContainer = styled.div`
@@ -17,9 +17,15 @@ const MainContainer = styled.div`
     column-gap: 1rem;
     grid-template-columns: auto auto;
     margin: 0 5.5rem 0 5.5rem;
-    @media (max-width: 1120px) {
+    @media only screen and (max-width: 1120px) and (min-width: 590px) {
         grid-template-columns: auto;
-    }
+        margin: 2rem 5.5rem 0 5.5rem;
+    };
+    @media only screen and (max-width: 589px) {
+        grid-template-columns: unset;
+        margin: 15rem 0.2rem 0 0.2rem;
+        column-gap: unset;
+    };
 `;
 const Column = styled.div`
     justify-self: center;
