@@ -49,7 +49,7 @@ const Homepage = () =>{
             <Container >
                 <h1>Hi<TextColor>!</TextColor> I'm<TextColor> Erick Salmeron</TextColor></h1>
                 <h2>a Web Developer</h2>
-                <ResumeBtn href="https://drive.google.com/file/d/1KqGfDVxrUohUzuv84u4W6uCyL9BflFMM/view?usp=drive_link">Download CV</ResumeBtn>
+                <ResumeBtn href="https://drive.google.com/file/d/1KqGfDVxrUohUzuv84u4W6uCyL9BflFMM/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Download CV</ResumeBtn>
             </Container>
         </MainContainer>
     )
