@@ -175,7 +175,7 @@ const ContactPage = () => {
             <PersonalInfo>
                 <PersonalTextTitle>E-mail</PersonalTextTitle>
                 <PersonalText>el.gs9595@gmail.com</PersonalText>
-                <PersonalText>el.gs9595@outlook.com</PersonalText>
+                <PersonalText>el.gs9595@hotmail.com</PersonalText>
                 <PersonalTextTitle>Socials</PersonalTextTitle>
                 <AnchorIcon href="https://www.linkedin.com/in/erickleogs/" target="_blank" rel="noopener noreferrer"><ContactIcon src={linkedinicon}/></AnchorIcon>
                 <AnchorIcon href="https://github.com/ericklgs" target="_blank" rel="noopener noreferrer"><ContactIcon src={githubicon}/></AnchorIcon>
